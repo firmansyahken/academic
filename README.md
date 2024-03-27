@@ -1,6 +1,6 @@
 # Academic Page
 
-This website is my academic website, where on the website there are lecture material notes, galleries, etc.
+This website is my academic page, where on the website there are lecture material notes, galleries, etc.
 
 The website was created using React + Tailwind.
 
@@ -22,4 +22,4 @@ npm run dev
 
 Created by ❤️ Wahyudi Firmansyah 2024
 
-Inpirated by academicpages
+Inspirated by academicpages
