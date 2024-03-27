@@ -1,14 +1,8 @@
 import React from "react";
 import LinkIcon from "../assets/icons/link.svg";
+import { BADGES } from "../utils/Constant";
 
 const RepoItem = (props) => {
-  const badges = {
-    JavaScript: "bg-amber-300 text-black",
-    HTML: "bg-red-400 text-white",
-    Php: "bg-violet-600 text-white",
-    Python: "bg-blue-500 text-white",
-    CSS: "bg-cyan-400 text-white",
-  };
   return (
     <>
       <div className="hover:bg-gray-100 px-4 py-6 border border-1">
@@ -35,8 +29,8 @@ const RepoItem = (props) => {
           {props.lang ? (
             <span
               className={`${
-                badges[props.lang]
-                  ? badges[props.lang]
+                BADGES[props.lang]
+                  ? BADGES[props.lang]
                   : "bg-slate-200 text-black"
               } py-2 px-4 text-xs`}
             >
@@ -48,7 +42,6 @@ const RepoItem = (props) => {
           <small className="text-gray-500">{props.created}</small>
         </div>
       </div>
-      {/* https://itexamanswers.net/4-5-1-packet-tracer-inter-vlan-routing-challenge-instructions-answer.html */}
     </>
   );
 };
