@@ -4,6 +4,14 @@ This website is my academic website, where on the website there are lecture mate
 
 The website was created using React + Tailwind.
 
+
+![Home](https://github.com/firmansyahken/academic/assets/66572675/bdfeb4c5-fd59-493c-9ec2-3877a6e6c643)
+
+![Detail Note](https://github.com/firmansyahken/academic/assets/66572675/b0be76ad-ae95-4c1e-8d2e-c8123ccf2423)
+
+![List Note](https://github.com/firmansyahken/academic/assets/66572675/b0a67bb3-ccb0-4e22-a5df-4732fbe64b90)
+
+
 ## Want to Use This Project
 
 ```sh
