@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { useMemo } from "react";
 import { BASE_API } from "../utils/Constant";
+import CardSkeleton from "../components/skeletons/CardSkeleton";
 
 const Gallery = () => {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState(null);
   const [isZoom, setZoom] = useState(false);
   const [srcImage, setImage] = useState("");
   const perPage = 12;
@@ -38,7 +39,7 @@ const Gallery = () => {
         </div>
       )}
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-1 sm:gap-3">
-        {data.slice(0, currentIndex).map((image, index) => (
+        {data ? data.slice(0, currentIndex).map((image, index) => (
           <img
             onClick={handleZoom}
             key={index}
@@ -46,9 +47,9 @@ const Gallery = () => {
             src={RAW_PATH + image.path}
             alt="isometric"
           />
-        ))}
+        )) : [1,2,3,4,5,6].map(i => (<CardSkeleton key={i}/>))}
       </div>
-      {data.length > currentIndex && (
+      {data && data.length > currentIndex && (
         <button
           className="w-full text-md mt-6 border boder-1"
           onClick={() => setCurrentIndex(currentIndex + perPage)}
