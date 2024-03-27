@@ -21,7 +21,7 @@ const Notes = () => {
         {data
           ? data.map((item, index) => <ListItem key={index} name={item.name} />)
           : [1, 2, 3, 4, 5, 6].map((i) => (
-              <BarSkeleton key={i} className="h-12" />
+              <BarSkeleton key={i} className="h-16 mb-4" />
             ))}
       </ul>
     </>
