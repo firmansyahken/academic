@@ -28,7 +28,7 @@ const Repositories = () => {
                 link={repo.html_url}
               />
             ))
-          : [1, 2, 3, 4, 5, 6].map((i) => <BarSkeleton key={i} />)}
+          : [1, 2, 3, 4, 5, 6].map((i) => <BarSkeleton key={i} className="h-24"/>)}
       </ul>
     </>
   );
