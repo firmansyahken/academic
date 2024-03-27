@@ -33,19 +33,21 @@ const Sidebar = () => {
   ];
   return (
     <div className="sticky top-[10%] px-4">
-      <div className="relative py-8 flex sm:block items-center gap-x-4">
-        <img
-          className="block mx-0 sm:mx-auto border border-2 aspect-square w-[70px] sm:w-[150px] rounded-full object-cover"
-          src={profiles.image}
-          alt="profile"
-        />
-        <div>
-          <h1 className="text-sm sm:text-lg mt-0 sm:mt-4 font-semibold">
-            {profiles.name}
-          </h1>
-          <p className="w-[80%] text-xs sm:text-sm mt-1 sm:mt-2">
-            {profiles.bio}
-          </p>
+      <div className="relative py-8 flex sm:block justify-between items-center gap-x-4">
+        <div className="flex flex-row sm:flex-col items-center gap-x-4">
+          <img
+            className="block mx-0 sm:mx-auto border border-2 aspect-square w-[70px] sm:w-[150px] rounded-full object-cover"
+            src={profiles.image}
+            alt="profile"
+          />
+          <div>
+            <h1 className="text-sm sm:text-lg mt-0 sm:mt-4 font-semibold">
+              {profiles.name}
+            </h1>
+            <p className="w-[80%] text-xs sm:text-sm mt-1 sm:mt-2">
+              {profiles.bio}
+            </p>
+          </div>
         </div>
 
         <button
