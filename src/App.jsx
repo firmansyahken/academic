@@ -6,11 +6,13 @@ import DetailNote from "./pages/DetailNote";
 import Repositories from "./pages/Repositories";
 import Gallery from "./pages/Gallery";
 import NotFound from "./pages/NotFound";
+import ScrollToTop from "./utils/ScrollToTop";
 
 function App() {
   return (
     <>
       <HashRouter>
+        <ScrollToTop/>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route path="/" element={<Home />} />
