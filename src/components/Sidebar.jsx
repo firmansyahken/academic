@@ -68,7 +68,7 @@ const Sidebar = () => {
         >
           {socials.map((social, index) => (
             <li key={index} className="text-sm list-none">
-              {social.name}
+              <a href={social.link} target="_blank">{social.name}</a>
             </li>
           ))}
         </div>
