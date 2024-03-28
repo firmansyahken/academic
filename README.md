@@ -22,4 +22,4 @@ npm run dev
 
 Created by ❤️ Wahyudi Firmansyah 2024
 
-Inspirated by academicpages
+Inspired by academicpages

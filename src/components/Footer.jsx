@@ -12,7 +12,7 @@ const Footer = () => {
             </a>{" "}
             2024
           </p>
-          <p className="text-sm">Inspirated by academicpages</p>
+          <p className="text-sm">Inspired by academicpages</p>
         </div>
         <p className="text-sm text-center sm:text-right mt-12 sm:mt-0">
           Powered by ⚛︎ React
